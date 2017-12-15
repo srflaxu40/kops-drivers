@@ -1,0 +1,27 @@
+{
+  "Comment": "Create a subdomain NS record in the parent domain",
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "subdomain.domain.com",
+        "Type": "NS",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "ns-x.awsdns-16.com"
+          },
+          {
+            "Value": "ns-y.awsdns-53.org"
+          },
+          {
+            "Value": "ns-z.awsdns-35.co.uk"
+          },
+          {
+            "Value": "ns-k.awsdns-39.net"
+          }
+        ]
+      }
+    }
+  ]
+}

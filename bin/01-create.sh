@@ -1,0 +1,15 @@
+. 00-env.sh && kops create cluster \
+    --authorization RBAC \
+    --name $KOPS_CLUSTER_NAME \
+    --zones $KOPS_CLUSTER_ZONES \
+    --topology private \
+    --networking calico \
+    --cloud $KOPS_CLOUD_PROVIDER \
+    --node-size $KOPS_NODE_SIZE \
+    --node-security-groups $NODE_SECURITY_GROUPS \
+    --master-size $KOPS_MASTER_SIZE \
+    --master-security-groups $MASTER_SECURITY_GROUPS \
+    --spotinst-cloud-provider $SPOTINST_CLOUD_PROVIDER \
+    --vpc $VPC_ID \
+    --network-cidr $NETWORK_CIDR \
+    --yes
