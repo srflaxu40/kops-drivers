@@ -14,7 +14,7 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 ```
 
 ## Create Cluster && VPC:
-* Scripts provided by spotinst kops.
+* Scripts provided by [spotinst kops](http://blog.spotinst.com/2017/08/17/elastigroup-kubernetes-operations-kops/).
 
 * Edit the values in `00-env.sh`
 
