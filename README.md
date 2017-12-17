@@ -57,7 +57,7 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 
 * If you have issues, see [here-image-pull-secrets](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/).
 
-## HELM - Initializing helm after cluster boot:
+### HELM - Initializing helm after cluster boot:
 * After deploying a new kubernetes cluster via kops (and configuring your env locally to interact with it properly),
   be sure to give helm permissions to act on namespaces with:
 
@@ -65,10 +65,17 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 
 * `helm init` - you should get the message `HAPPY TILLING`, and you are now ready to rock 'n roll.
 
-## Install Nginx Ingress:
+### Install Nginx Ingress:
 * Follow the [Generic Deployment Instructions, and also use the `Install with RBAC roles`](https://github.com/kubernetes/ingress-nginx/blob/master/deploy/README.md).
   - The above are installed under the `ingress-nginx` namespace.
   - For a good example of ingress with a service please look at `build-files/statengine`.
+
+## Export your admin level config for use elsewhere:
+* Set your KUBECONFIG environment variable so you don't overwrite or merge to a current config:
+  - `export KUBECONFIG=$HOME/tools.prominentedge.com`
+
+* Export:
+  - `kops export kubecfg --name tools.prominentedge.com`
 
 ---
 
