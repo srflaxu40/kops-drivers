@@ -1,6 +1,6 @@
 # production-kops
 
-Setup KOPS with RBAC enabled and initial role bindings in private topology with calico networking.
+Setup *KOPS* on *AWS* with RBAC enabled and initial role bindings in private topology with calico networking.
 
 ## Setup:
 
