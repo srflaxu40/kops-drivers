@@ -77,6 +77,19 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 * Export:
   - `kops export kubecfg --name tools.prominentedge.com`
 
+## Install External DNS:
+
+* Update IAM roles by creating and attaching the IAM policy specified [here](https://github.com/kubernetes-incubator/external-dns/blob/master/docs/tutorials/aws.md).
+
+```
+cd ./external-dns
+kubectl create -f external*
+```
+
+* Enjoy spaceship.
+![Spaceship](http://www.likecool.com/Gear/Pic/Gif%20Star%20Trek%20Defiant%20USS%20NCC1764/Gif-Star-Trek-Defiant-USS-NCC1764.gif)
+![Spaceship-Dance](https://upload-assets.vice.com/files/2015/12/16/1450302693Drake2.gif)
+
 ---
 
 ## Where next?
