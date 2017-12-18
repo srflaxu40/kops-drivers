@@ -2,7 +2,7 @@
 
 Setup *KOPS* on *AWS* with RBAC enabled and initial role bindings in private topology with calico networking.
 
-## Setup:
+## Pre-Flight:
 
 * Download and install latest spotinst kops binary compiled just for SpotInst:
 ```
@@ -12,6 +12,9 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 linux_amd64
 http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alpha.1/bin/linux/amd64/kops
 ```
+
+## IAM:
+* Setup an IAM user for KOPS (goes inside 00-env.sh script) as outlined [here](https://github.com/kubernetes/kops/blob/master/docs/aws.md#setup-iam-user).
 
 ## Create Cluster && VPC:
 * Scripts provided by [spotinst kops](http://blog.spotinst.com/2017/08/17/elastigroup-kubernetes-operations-kops/).
