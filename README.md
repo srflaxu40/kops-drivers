@@ -30,7 +30,7 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 
 * `cd bin && ./02-create-wo-apply.sh`
 
-* `. 00-env.sh && kops get clusters -o yaml > config.yaml `
+* `. 00-env.sh && kops get clusters -o yaml > config.yaml`
 
 * `. 00-env.sh && kops edit cluster`
   - Change your subnet CIDRs to non-conflicting CIDRs; IE those that aren't currently used in your VPC.
