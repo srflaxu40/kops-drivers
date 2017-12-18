@@ -87,7 +87,11 @@ kubectl create -f external*
 ```
 
 * Enjoy spaceship.
+
+
 ![Spaceship](http://www.likecool.com/Gear/Pic/Gif%20Star%20Trek%20Defiant%20USS%20NCC1764/Gif-Star-Trek-Defiant-USS-NCC1764.gif)
+
+
 ![Spaceship-Dance](https://upload-assets.vice.com/files/2015/12/16/1450302693Drake2.gif)
 
 ---
