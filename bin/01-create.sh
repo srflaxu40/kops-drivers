@@ -8,6 +8,7 @@
     --node-size $KOPS_NODE_SIZE \
     --node-security-groups $NODE_SECURITY_GROUPS \
     --master-size $KOPS_MASTER_SIZE \
+    --master-count $KOPS_MASTER_COUNT \
     --master-security-groups $MASTER_SECURITY_GROUPS \
     --spotinst-cloud-provider $SPOTINST_CLOUD_PROVIDER \
     --vpc $VPC_ID \
