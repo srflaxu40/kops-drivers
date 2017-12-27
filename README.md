@@ -48,6 +48,13 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 ## When satisfied with your cluster save the overall manifest for later use / record-keeping:
 `kops get $KOPS_CLUSTER_NAME -o yaml > <some-output.txt>`
 
+## Export your admin level config for use elsewhere:
+* Set your KUBECONFIG environment variable so you don't overwrite or merge to a current config:
+  - `export KUBECONFIG=$HOME/tools.prominentedge.com`
+
+* Export:
+  - `kops export kubecfg --name tools.prominentedge.com
+
 ## Deploy Spaceship:
 
 ### Creating pull secret for dockerhub registry (only run once):
@@ -75,13 +82,6 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 * Follow the [Generic Deployment Instructions, and also use the `Install with RBAC roles`](https://github.com/kubernetes/ingress-nginx/blob/master/deploy/README.md).
   - The above are installed under the `ingress-nginx` namespace.
   - For a good example of ingress with a service please look at `build-files/statengine`.
-
-## Export your admin level config for use elsewhere:
-* Set your KUBECONFIG environment variable so you don't overwrite or merge to a current config:
-  - `export KUBECONFIG=$HOME/tools.prominentedge.com`
-
-* Export:
-  - `kops export kubecfg --name tools.prominentedge.com`
 
 ## Install External DNS:
 
