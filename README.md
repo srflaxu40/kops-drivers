@@ -45,6 +45,9 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 * `. 00-env.sh && kops update cluster --name $KOPS_CLUSTER_NAME`
 * `. 00-env.sh && kops rolling-update --name $KOPS_CLUSTER_NAME --yes`
 
+## When satisfied with your cluster save the overall manifest for later use / record-keeping:
+`kops get $KOPS_CLUSTER_NAME -o yaml > <some-output.txt>`
+
 ## Deploy Spaceship:
 
 ### Creating pull secret for dockerhub registry (only run once):
