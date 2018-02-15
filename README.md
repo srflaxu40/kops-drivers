@@ -13,6 +13,8 @@ linux_amd64
 http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alpha.1/bin/linux/amd64/kops
 ```
 
+* Next link them to your bin dir `ln -s /usr/local/bin/kops kops`
+
 ## IAM:
 * Setup an IAM user for KOPS (goes inside 00-env.sh script) as outlined [here](https://github.com/kubernetes/kops/blob/master/docs/aws.md#setup-iam-user).
 
