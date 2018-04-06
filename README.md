@@ -43,7 +43,7 @@ http://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.8.0-alph
 ## Update ig:
 * `. 00-env.sh && kops edit ig <instance group>`
 * `. 00-env.sh && kops update cluster --name $KOPS_CLUSTER_NAME`
-* `. 00-env.sh && kops rolling-update --name $KOPS_CLUSTER_NAME --yes`
+* `. 00-env.sh && kops rolling-update cluster --name $KOPS_CLUSTER_NAME --master-interval 3m --node-interval 3m --yes --fail-on-validate-error="false"`
 
 ## When satisfied with your cluster save the overall manifest for later use / record-keeping:
 `kops get $KOPS_CLUSTER_NAME -o yaml > <some-output.txt>`
