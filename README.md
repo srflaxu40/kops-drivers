@@ -4,17 +4,11 @@ Setup *KOPS* on *AWS* with RBAC enabled and initial role bindings in private top
 
 ## Pre-Flight:
 
+* NOTE - SpotInst kops is now officially a part of the official kops tree.
 * Download and install latest spotinst kops binary compiled just for SpotInst:
-```
-darwin_amd64
-https://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.10.0/bin/darwin/amd64/kops
+* This repo was last updated for use with kops v1.11.0
 
-linux_amd64
-https://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.10.0/bin/linux/amd64/kops
-
-windows_amd64
-https://spotinst-public.s3.amazonaws.com/integrations/kubernetes/kops/v1.10.0/bin/windows/amd64/kops.exe
-```
+[kops downloads](https://github.com/kubernetes/kops/releases)
 
 * Next link them to your bin dir `ln -s /usr/local/bin/kops kops`
 
